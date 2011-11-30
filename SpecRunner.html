@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Sask JavaScript Movie Store</title>
+  <link rel="stylesheet" type="text/css" href="jasmine-1.1.0/jasmine.css" media="all" />
+    
+  <!-- specrunner dependencies -->
+  <script type="text/javascript" src="jasmine-1.1.0/jasmine.js"></script>
+  <script type="text/javascript" src="jasmine-1.1.0/jasmine-html.js"></script>
+  <script type="text/javascript" src="lib/matchers.js"></script>
+    
+  <!-- src -->
+  <script type="text/javascript" src="lib/customer.js"></script>
+  <script type="text/javascript" src="lib/movie.js"></script>
+  <script type="text/javascript" src="lib/rental.js"></script>
+  <script type="text/javascript" src="lib/type.js"></script>
+  
+  <!-- spec -->
+  <script type="text/javascript" src="spec/customer_spec.js"></script>
+  <script type="text/javascript" src="spec/movie_spec.js"></script>
+  <script type="text/javascript" src="spec/rental_spec.js"></script>
+  <script type="text/javascript" src="spec/type_spec.js"></script>  
+  <script type="text/javascript">
+    (function() {
+      var jasmineEnv = jasmine.getEnv();
+      jasmineEnv.updateInterval = 1000;
+
+      var trivialReporter = new jasmine.TrivialReporter();
+
+      jasmineEnv.addReporter(trivialReporter);
+
+      jasmineEnv.specFilter = function(spec) {
+        return trivialReporter.specFilter(spec);
+      };
+
+      var currentWindowOnload = window.onload;
+
+      window.onload = function() {
+        if (currentWindowOnload) {
+          currentWindowOnload();
+        }
+        execJasmine();
+      };
+
+      function execJasmine() {
+        jasmineEnv.execute();
+      }
+
+    })();
+  </script>
+  
+</head>
+<body>
+  
+</body>
+</html>
