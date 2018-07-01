@@ -48,7 +48,7 @@ The following is a really rough guideline and starting point for a group to work
  
 ## Supporting Materials
 
-* [Jasmine BDD Standalone SpecRunner](http://pivotal.github.com/jasmine/downloads/jasmine-standalone-1.1.0.rc1.zip)
+* [Jasmine BDD Standalone SpecRunner](https://github.com/jasmine/jasmine/releases/download/v3.1.0/jasmine-standalone-3.1.0.zip)
 * [Refactoring: improving the design of existing code, By Martin Fowler & Kent Beck](http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/ref=sr_1_1?ie=UTF8&qid=1321327192&sr=8-1)
 * [RandoriKata Instructions](http://codingdojo.org/cgi-bin/wiki.pl?RandoriKata)
 * [Rhythm of Test First](http://codingdojo.org/cgi-bin/wiki.pl?RhythmOfTestFirst)
